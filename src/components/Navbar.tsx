@@ -1,8 +1,9 @@
 import React from 'react';
 import motorcycle from '../assets/images/motorcycle.png';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+  const linkClass = ({ isActive }) => isActive ? 'bg-black text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2' : 'text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2'
   return (
     <nav className="bg-lime-700 border-b border-lime-500">
       <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -22,18 +23,18 @@ const Navbar = () => {
             </a>
             <div className="md:ml-auto">
               <div className="flex space-x-2">
-                <Link
+                <NavLink
                   to="/"
-                  className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Home</Link>
-                <Link
+                  className={linkClass}
+                >Home</NavLink>
+                <NavLink
                   to="/bikes"
-                  className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Bikes</Link>
-                <Link
+                  className={linkClass}
+                >Bikes</NavLink>
+                <NavLink
                   to="/add-bike"
-                  className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Add Bike</Link>
+                  className={linkClass}
+                >Add Bike</NavLink>
               </div>
             </div>
           </div>
