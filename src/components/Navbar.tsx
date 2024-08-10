@@ -27,7 +27,7 @@ const Navbar = () => {
                 >Home</a
                 >
                 <a
-                  href="/bikes.html"
+                  href="/bikes"
                   className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
                 >Bikes</a
                 >
