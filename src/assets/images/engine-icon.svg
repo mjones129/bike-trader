@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="1080"
+   height="1080"
+   viewBox="0 0 285.75 285.75"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1">
+    <path
+       id="rect3"
+       style="fill:#929292;stroke:#333333;stroke-width:5.20116;stroke-linecap:round;stroke-opacity:1"
+       d="m 19.181966,89.969839 c 1e-6,-25.882621 52.745409,-63.420445 73.056319,-58.503073 20.310905,4.917373 85.176305,106.364814 85.176305,106.364814 l -73.05631,58.50307 c 0,0 -85.176317,-80.48219 -85.176314,-106.364811 z" />
+    <path
+       id="rect3-1"
+       style="fill:#929292;stroke:#333333;stroke-width:5.20116;stroke-linecap:round;stroke-opacity:1"
+       d="m 266.56803,89.969839 c 0,-25.882621 -52.74541,-63.42044 -73.05632,-58.503068 -20.31091,4.917372 -85.1763,106.364779 -85.1763,106.364779 l 73.05631,58.5031 c 0,0 85.17631,-80.48219 85.17631,-106.364811 z" />
+    <ellipse
+       style="fill:#929292;fill-opacity:1;stroke:#333333;stroke-width:6.04426;stroke-linecap:round;stroke-opacity:1"
+       id="path2"
+       cx="143.86223"
+       cy="189.07233"
+       rx="61.802605"
+       ry="63.632183" />
+    <path
+       style="fill:#767676;fill-opacity:1;stroke:#333333;stroke-width:6.27999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 42.076523,93.042403 90.468706,56.880288"
+       id="path4" />
+    <path
+       style="fill:#767676;fill-opacity:1;stroke:#333333;stroke-width:6.27999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="m 65.283574,113.14235 33.5521,-27.275139"
+       id="path4-6" />
+    <path
+       style="fill:#767676;fill-opacity:1;stroke:#333333;stroke-width:6.27999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 244.7367,93.042403 196.34451,56.880288"
+       id="path4-3" />
+    <path
+       style="fill:#767676;fill-opacity:1;stroke:#333333;stroke-width:6.27999;stroke-linecap:round;stroke-dasharray:none;stroke-opacity:1"
+       d="M 221.52965,113.14235 187.97755,85.867211"
+       id="path4-6-1" />
+    <ellipse
+       style="fill:#929292;fill-opacity:1;stroke:#333333;stroke-width:3.3887;stroke-linecap:round;stroke-opacity:1"
+       id="path2-8"
+       cx="142.76511"
+       cy="189.07233"
+       rx="34.649483"
+       ry="35.675232" />
+  </g>
+</svg>
