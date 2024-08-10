@@ -11,16 +11,16 @@ const CardContainer = () => {
             <p className='mt-2 mb-4'>
               Explore the latest bikes and find your dream machine.
             </p>
-            <a href="#" className='inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600'>
+            <a href="#" className='inline-block bg-lime-500 text-white rounded-lg px-4 py-2 hover:bg-lime-600'>
               Browse Bikes
             </a>
           </Card>
-          <Card>
+          <Card bg="bg-lime-100">
             <h2 className='text-2xl font-bold'>For Sellers</h2>
             <p className='mt-2 mb-4'>
               List your bike and start getting offers today.
             </p>
-            <a href="#" className='inline-block bg-indigo-500 text-white rounded-lg px-4 py-2 hover:bg-indigo-600'>
+            <a href="#" className='inline-block bg-lime-500 text-white rounded-lg px-4 py-2 hover:bg-lime-600'>
               List Bike
             </a>
           </Card>
