@@ -1,5 +1,6 @@
 import React from 'react';
 import motorcycle from '../assets/images/motorcycle.png';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -9,7 +10,7 @@ const Navbar = () => {
           <div
             className="flex flex-1 items-center justify-center md:items-stretch md:justify-start"
           >
-            <a className="flex flex-shrink-0 items-center mr-4" href="/index.html">
+            <a className="flex flex-shrink-0 items-center mr-4" href="/">
               <img
                 className="h-10 w-auto"
                 src={motorcycle}
@@ -21,21 +22,18 @@ const Navbar = () => {
             </a>
             <div className="md:ml-auto">
               <div className="flex space-x-2">
-                <a
-                  href="/index.html"
+                <Link
+                  to="/"
                   className="text-white bg-black hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Home</a
-                >
-                <a
-                  href="/bikes"
+                >Home</Link>
+                <Link
+                  to="/bikes"
                   className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Bikes</a
-                >
-                <a
-                  href="/add-bike.html"
+                >Bikes</Link>
+                <Link
+                  to="/add-bike"
                   className="text-white hover:bg-gray-900 hover:text-white rounded-md px-3 py-2"
-                >Add Bike</a
-                >
+                >Add Bike</Link>
               </div>
             </div>
           </div>

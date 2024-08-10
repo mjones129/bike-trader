@@ -1,5 +1,6 @@
 import React from 'react';
 import engineIcon from '../assets/images/engine-icon.svg';
+import { Link } from 'react-router-dom';
 
 const SingleBikeListing = ({ bike }) => {
   return (
@@ -18,17 +19,17 @@ const SingleBikeListing = ({ bike }) => {
 
         <div className="border border-gray-100 mb-5"></div>
 
-        <div className="flex flex-col lg:flex-row justify-between mb-4">
+        <div className="flex flex-col lg:flex-row justify-between items-center mb-4">
           <div className="text-dark mb-3">
             <i className="fa-solid fa-location-dot text-lg"></i>
             <p> <img className="size-8" src={engineIcon} /> {bike.displacement}</p>
           </div>
-          <a
-            href={`/bike/${bike.id}`}
+          <Link
+            to={`/bike/${bike.id}`}
             className="bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
-          </a>
+          </Link>
         </div>
       </div>
     </div>
