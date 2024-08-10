@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <Hero />
+      <Hero title="Find Your Next Bike" subtitle="Buy, Sell, and Trade" />
 
       <section className="py-4">
         <div className="container-xl lg:container m-auto">
