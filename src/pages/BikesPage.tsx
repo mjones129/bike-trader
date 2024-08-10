@@ -1,8 +1,11 @@
 import React from 'react'
+import BikeListings from '../components/BikeListings'
 
 const BikesPage = () => {
   return (
-    <div>BikesPage</div>
+    <section className='bg-lime-100 py-6 px-6'>
+      <BikeListings />
+    </section>
   )
 }
 

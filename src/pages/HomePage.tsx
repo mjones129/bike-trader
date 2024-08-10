@@ -8,7 +8,7 @@ const HomePage = () => {
     <>
       <Hero title="Find Your Next Ride" subtitle="Buy, Sell, and Trade" />
       <CardContainer />
-      <BikeListings />
+      <BikeListings isHome={true} />
       <ViewAllBikes />
     </>
   )
