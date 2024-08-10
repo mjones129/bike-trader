@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "make": "Kawasaki",
+    "model": "Ninja H2",
+    "year": "2023",
+    "price": "$31,500",
+    "displacement": "998cc",
+    "image": "./src/assets/images/h2.png"
+  },
+  {
+    "id": "2",
+    "make": "Harley-Davidson",
+    "model": "Sportster S",
+    "year": "2024",
+    "price": "$16,999",
+    "displacement": "76.4 cu in",
+    "image": "./src/assets/images/SportsterS.png"
+  },
+  {
+    "id": "3",
+    "make": "KTM",
+    "model": "390 Duke",
+    "year": "2024",
+    "price": "$7,399",
+    "displacement": "399cc",
+    "image": "./src/assets/images/390duke.png"
+  },
+  {
+    "id": "4",
+    "make": "Yamaha",
+    "model": "YZF R7",
+    "year": "2024",
+    "price": "$9,199",
+    "displacement": "689cc",
+    "image": "./src/assets/images/YZFR7.webp"
+  },
+  {
+    "id": "5",
+    "make": "Indian",
+    "model": "Scout Bobber",
+    "year": "2020",
+    "price": "$10,999",
+    "displacement": "69 cu in",
+    "image": "./src/assets/images/scoutbob.webp"
+  },
+  {
+    "id": "6",
+    "make": "Honda",
+    "model": "Grom",
+    "year": "2025",
+    "price": "$3,599",
+    "displacement": "123.9cc",
+    "image": "./src/assets/images/grom.webp"
+  },
+  {
+    "id": "7",
+    "make": "Triumph",
+    "model": "Thruxton 900",
+    "year": "2008",
+    "price": "$4,000",
+    "displacement": "865cc",
+    "image": "./src/assets/images/thruxton.webp"
+  },
+  {
+    "id": "8",
+    "make": "Suzuki",
+    "model": "GSX-8S",
+    "year": "2024",
+    "price": "$8,999",
+    "displacement": "776cc",
+    "image": "./src/assets/images/gsx8s.webp"
+  },
+  {
+    "id": "9",
+    "make": "Ducati",
+    "model": "Scrambler Sixty2",
+    "year": "2018",
+    "price": "$5,499",
+    "displacement": "399cc",
+    "image": "./src/assets/images/scrambler.webp"
+  },
+  {
+    "id": "10",
+    "make": "BMW",
+    "model": "S 1000 RR",
+    "year": "2022",
+    "price": "$19,995",
+    "displacement": "999cc",
+    "image": "./src/assets/images/bmw.webp"
+  }
+]
