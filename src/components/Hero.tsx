@@ -5,7 +5,7 @@ interface HeroProps {
   subtitle: string
 }
 
-const Hero: React.FC<HeroProps> = ({ title, subtitle }) => {
+const Hero: React.FC<HeroProps> = ({ title = "Find Your Next Ride", subtitle = "Buy, Sell, and Trade" }) => {
   return (
     <section className="bg-indigo-700 py-20 mb-4">
       <div

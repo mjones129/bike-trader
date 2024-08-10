@@ -2,6 +2,7 @@ import './index.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Card from './components/Card';
+import CardContainer from './components/CardContainer';
 
 function App() {
 
@@ -9,11 +10,12 @@ function App() {
     <>
       <Navbar />
       <Hero title="Find Your Next Bike" subtitle="Buy, Sell, and Trade" />
+      <CardContainer />
 
       <section className="py-4">
         <div className="container-xl lg:container m-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 rounded-lg">
-            <Card />
+
             <div className="bg-indigo-100 p-6 rounded-lg shadow-md">
               <h2 className="text-2xl font-bold">For Employers</h2>
               <p className="mt-2 mb-4">
