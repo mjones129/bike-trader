@@ -1,4 +1,3 @@
-import React from 'react';
 import engineIcon from '../assets/images/engine-icon.svg';
 import { Link } from 'react-router-dom';
 
