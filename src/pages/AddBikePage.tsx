@@ -1,20 +1,37 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 
-const AddBikePage = () => {
+const AddBikePage = ({ addBikeSubmit }) => {
   //add piece of state for each form input
   const [make, setMake] = useState('');
   const [model, setModel] = useState('');
   const [year, setYear] = useState('');
   const [displacement, setDisplacement] = useState('');
   const [image, setImage] = useState('');
+
+  const navigate = useNavigate();
+
+  const submitForm = (e) => {
+    e.preventDefault();
+    const newBike = {
+      make,
+      model,
+      year,
+      displacement,
+      image
+    }
+    addBikeSubmit(newBike);
+    return navigate('/bikes');
+  }
+
   return (
     <section className="bg-indigo-50">
       <div className="container m-auto max-w-2xl py-24">
         <div
           className="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
         >
-          <form>
+          <form onSubmit={submitForm}>
             <h2 className="text-3xl text-center font-semibold mb-6">Add Bike</h2>
 
             <div className="mb-4">

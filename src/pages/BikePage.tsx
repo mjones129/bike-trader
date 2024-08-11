@@ -1,9 +1,20 @@
-import { useParams, useLoaderData } from 'react-router-dom';
+import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
-const BikePage = () => {
+
+
+const BikePage = ({ deleteBike }) => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const bike = useLoaderData();
+
+  const onDeleteClick = (bikeId) => {
+    const confim = window.confirm('Are you sure you want to delete this bike?');
+    if (!confirm) return;
+
+    deleteBike(bikeId);
+    navigate('/bikes');
+  }
 
   return (
     <>
@@ -85,7 +96,7 @@ const BikePage = () => {
                   className="bg-lime-500 hover:bg-lime-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >Edit Job</Link
                 >
-                <button
+                <button onClick={() => onDeleteClick(bike.id)}
                   className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
                   Delete Job
