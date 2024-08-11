@@ -1,5 +1,6 @@
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
 
 
@@ -13,6 +14,9 @@ const BikePage = ({ deleteBike }) => {
     if (!confirm) return;
 
     deleteBike(bikeId);
+
+    toast.error('Bike deleted.');
+
     navigate('/bikes');
   }
 

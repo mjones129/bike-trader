@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-toastify';
 
 
 const AddBikePage = ({ addBikeSubmit }) => {
@@ -24,6 +25,9 @@ const AddBikePage = ({ addBikeSubmit }) => {
       price
     }
     addBikeSubmit(newBike);
+
+    toast.success('Bike successfully added.');
+
     return navigate('/bikes');
   }
 
