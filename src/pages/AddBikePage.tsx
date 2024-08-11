@@ -9,6 +9,7 @@ const AddBikePage = ({ addBikeSubmit }) => {
   const [year, setYear] = useState('');
   const [displacement, setDisplacement] = useState('');
   const [image, setImage] = useState('');
+  const [price, setPrice] = useState('');
 
   const navigate = useNavigate();
 
@@ -19,7 +20,8 @@ const AddBikePage = ({ addBikeSubmit }) => {
       model,
       year,
       displacement,
-      image
+      image,
+      price
     }
     addBikeSubmit(newBike);
     return navigate('/bikes');
@@ -95,6 +97,22 @@ const AddBikePage = ({ addBikeSubmit }) => {
                 required
                 value={displacement}
                 onChange={(e) => setDisplacement(e.target.value)}
+              />
+            </div>
+
+            <div className='mb-4'>
+              <label className='block text-gray-700 font-bold mb-2'>
+                Price
+              </label>
+              <input
+                type='text'
+                id='price'
+                name='price'
+                className='border rounded w-full py-2 px-3 mb-2'
+                placeholder='Engine Displacement'
+                required
+                value={price}
+                onChange={(e) => setPrice(e.target.value)}
               />
             </div>
 

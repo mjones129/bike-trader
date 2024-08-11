@@ -89,6 +89,15 @@
       "price": "$19,995",
       "displacement": "999cc",
       "image": "/src/assets/images/bmw.webp"
+    },
+    {
+      "id": "ec78",
+      "make": "Kawasaki",
+      "model": "KLR 650",
+      "year": "2024",
+      "displacement": "650cc",
+      "image": "https://cdn-media.tilabs.io/v1/media/66b599f58fe5cf779669da6b.webp?width=1024&height=768&quality=70&bestfit=true&blurBackground=true&blurValue=100&upsize=true",
+      "price": "$8,199"
     }
   ]
 }

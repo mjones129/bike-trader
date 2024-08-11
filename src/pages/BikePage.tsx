@@ -47,17 +47,16 @@ const BikePage = ({ deleteBike }) => {
                   <i
                     className="fa-solid fa-location-dot text-lg text-orange-700 mr-2"
                   ></i>
-                  <p className="text-black-700">{bike.price}</p>
                 </div>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-lime-800 text-lg font-bold mb-6">
-                  Job Description
+                  Bike Description
                 </h3>
 
                 <p className="mb-4">
-                  We are seeking a talented Front-End Developer to join our team in Boston, MA. The ideal candidate will have strong skills in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworks such as React or Angular.
+                  Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.
                 </p>
 
                 <h3 className="text-lime-800 text-lg font-bold mb-2">Price</h3>
@@ -68,12 +67,12 @@ const BikePage = ({ deleteBike }) => {
 
             <aside>
               <div className="bg-white p-6 rounded-lg shadow-md">
-                <h3 className="text-xl font-bold mb-6">Company Info</h3>
+                <h3 className="text-xl font-bold mb-6">Seller Info</h3>
 
-                <h2 className="text-2xl">NewTek Solutions</h2>
+                <h2 className="text-2xl">Rad Bikes</h2>
 
                 <p className="my-2">
-                  NewTek Solutions is a leading technology company specializing in web development and digital solutions. We pride ourselves on delivering high-quality products and services to our clients while fostering a collaborative and innovative work environment.
+                  Rad Bikes is a leading motorcycle dealership specializing in rad bikes, parts, and accessories. We pride ourselves on delivering high-quality products and services to our clients and teaching you to ride if you don't know how.
                 </p>
 
                 <hr className="my-4" />
@@ -81,7 +80,7 @@ const BikePage = ({ deleteBike }) => {
                 <h3 className="text-xl">Contact Email:</h3>
 
                 <p className="my-2 bg-lime-100 p-2 font-bold">
-                  contact@newteksolutions.com
+                  contact@radbikes.com
                 </p>
 
                 <h3 className="text-xl">Contact Phone:</h3>
@@ -90,16 +89,16 @@ const BikePage = ({ deleteBike }) => {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
-                <h3 className="text-xl font-bold mb-6">Manage Job</h3>
+                <h3 className="text-xl font-bold mb-6">Manage Bike</h3>
                 <Link
                   to={`/bikes/edit/${id}`}
                   className="bg-lime-500 hover:bg-lime-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
-                >Edit Job</Link
+                >Edit Bike</Link
                 >
                 <button onClick={() => onDeleteClick(bike.id)}
                   className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >
-                  Delete Job
+                  Delete Bike
                 </button>
               </div>
             </aside>
