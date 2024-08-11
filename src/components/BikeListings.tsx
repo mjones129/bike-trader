@@ -7,9 +7,10 @@ const BikeListings = ({ isHome = false }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    const apiUrl = isHome ? 'http://localhost:8000/bikes?_limit=3' : 'http://localhost:8000/bikes';
     const fetchBikes = async () => {
       try {
-        const res = await fetch('http://localhost:8000/bikes');
+        const res = await fetch(apiUrl);
         const data = await res.json();
         setBikes(data);
       } catch (error) {
