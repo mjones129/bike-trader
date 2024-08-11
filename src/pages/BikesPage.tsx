@@ -1,4 +1,3 @@
-import React from 'react'
 import BikeListings from '../components/BikeListings'
 
 const BikesPage = () => {
