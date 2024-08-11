@@ -25,7 +25,7 @@ const SingleBikeListing = ({ bike }) => {
             <p> <img className="size-8" src={engineIcon} /> {bike.displacement}</p>
           </div>
           <Link
-            to={`/bike/${bike.id}`}
+            to={`/bikes/${bike.id}`}
             className="bg-lime-500 hover:bg-lime-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More
