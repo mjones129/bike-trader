@@ -95,7 +95,7 @@ const BikePage = ({ deleteBike }) => {
               <div className="bg-white p-6 rounded-lg shadow-md mt-6">
                 <h3 className="text-xl font-bold mb-6">Manage Bike</h3>
                 <Link
-                  to={`/bikes/edit/${id}`}
+                  to={`/edit-bike/${id}`}
                   className="bg-lime-500 hover:bg-lime-600 text-white text-center font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline mt-4 block"
                 >Edit Bike</Link
                 >

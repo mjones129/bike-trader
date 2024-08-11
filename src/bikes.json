@@ -98,6 +98,15 @@
       "displacement": "650cc",
       "image": "https://cdn-media.tilabs.io/v1/media/66a1dfce296a2036442138f8.webp?width=1024&height=768&quality=70&bestfit=true&blurBackground=true&blurValue=100&upsize=true",
       "price": "$7,099"
+    },
+    {
+      "id": "a384",
+      "make": "Indian",
+      "model": "Scout Bobber Sixty",
+      "year": "2024",
+      "displacement": "990cc",
+      "image": "https://cdn-media.tilabs.io/v1/media/6694b0516c950450fa078c40.webp?width=1024&height=768&quality=70&bestfit=true&blurBackground=true&blurValue=100&upsize=true",
+      "price": "$102,749"
     }
   ]
 }
