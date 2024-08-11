@@ -1,4 +1,5 @@
-[
+{
+  "bikes": [
   {
     "id": "1",
     "make": "Kawasaki",
@@ -90,3 +91,4 @@
     "image": "./src/assets/images/bmw.webp"
   }
 ]
+}

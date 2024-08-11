@@ -1,9 +1,26 @@
-import React from 'react'
-import bikes from '../bikes.json';
+import { useState, useEffect } from 'react';
 import SingleBikeListing from './SingleBikeListing';
 
 const BikeListings = ({ isHome = false }) => {
-  const bikeListings = isHome ? bikes.slice(0, 3) : bikes;
+  const [bikes, setBikes] = useState([]);
+  const [loading, setLoading] = useState([true]);
+
+  useEffect(() => {
+    const fetchBikes = async () => {
+      try {
+        const res = await fetch('http://localhost:8000/bikes');
+        const data = await res.json();
+        setBikes(data);
+      } catch (error) {
+        console.log('Error fetching data: ', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchBikes();
+
+  }, []);
+
   return (
     <>
       <div className="container-xl lg:container m-auto">
@@ -11,7 +28,7 @@ const BikeListings = ({ isHome = false }) => {
           {isHome ? 'New Arrivals' : 'Browse Bikes'}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {bikeListings.map((bike) => (
+          {bikes.map((bike) => (
             <SingleBikeListing key={bike.id} bike={bike} />
           ))}
         </div>
