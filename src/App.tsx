@@ -9,10 +9,11 @@ import AddBikePage from './pages/AddBikePage';
 import EditBikePage from './pages/EditBikePage';
 
 
+
 function App() {
   //add new bike
-  const addBike = async (newBike) => {
-    const res = await fetch('/api/bikes', {
+  const addBike = async (newBike: any) => {
+    await fetch('/api/bikes', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -23,16 +24,16 @@ function App() {
   };
 
   //delete bike
-  const deleteBike = async (id) => {
-    const res = await fetch(`/api/bikes/${id}`, {
+  const deleteBike = async (id: any) => {
+    await fetch(`/api/bikes/${id}`, {
       method: 'DELETE',
     });
     return;
   }
 
   //edit bike
-  const updateBike = async (bike) => {
-    const res = await fetch(`/api/bikes/${bike.id}`, {
+  const updateBike = async (bike: any) => {
+    await fetch(`/api/bikes/${bike.id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json'

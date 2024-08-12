@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { toast } from 'react-toastify';
 
 
-const AddBikePage = ({ addBikeSubmit }) => {
+const AddBikePage = ({ addBikeSubmit }: { addBikeSubmit: any }) => {
   //add piece of state for each form input
   const [make, setMake] = useState('');
   const [model, setModel] = useState('');
@@ -14,7 +14,7 @@ const AddBikePage = ({ addBikeSubmit }) => {
 
   const navigate = useNavigate();
 
-  const submitForm = (e) => {
+  const submitForm = (e: any) => {
     e.preventDefault();
     const newBike = {
       make,

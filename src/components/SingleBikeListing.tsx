@@ -1,7 +1,8 @@
 import engineIcon from '../assets/images/engine-icon.svg';
 import { Link } from 'react-router-dom';
 
-const SingleBikeListing = ({ bike }) => {
+
+const SingleBikeListing = ({ bike }: { bike: any }) => {
   return (
     <div className="bg-white rounded-xl shadow-md relative">
       <div className="p-4">

@@ -1,12 +1,11 @@
-import React from 'react'
 import { useParams, useLoaderData, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const EditBikePage = ({ updateBikeSubmit }) => {
+const EditBikePage = ({ updateBikeSubmit }: { updateBikeSubmit: any }) => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const bike = useLoaderData();
+  const bike: any = useLoaderData();
   const [make, setMake] = useState(bike.make);
   const [model, setModel] = useState(bike.model);
   const [year, setYear] = useState(bike.year);
@@ -14,7 +13,7 @@ const EditBikePage = ({ updateBikeSubmit }) => {
   const [image, setImage] = useState(bike.image);
   const [price, setPrice] = useState(bike.price);
 
-  const submitForm = (e) => {
+  const submitForm = (e: any) => {
     e.preventDefault();
     const updatedBike = {
       id,

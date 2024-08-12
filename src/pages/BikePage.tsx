@@ -4,13 +4,13 @@ import { toast } from 'react-toastify';
 
 
 
-const BikePage = ({ deleteBike }) => {
+const BikePage = ({ deleteBike }: { deleteBike: any }) => {
   const navigate = useNavigate();
   const { id } = useParams();
-  const bike = useLoaderData();
+  const bike: any = useLoaderData();
 
-  const onDeleteClick = (bikeId) => {
-    const confim = window.confirm('Are you sure you want to delete this bike?');
+  const onDeleteClick = (bikeId: any) => {
+    window.confirm('Are you sure you want to delete this bike?');
     if (!confirm) return;
 
     deleteBike(bikeId);
@@ -115,7 +115,7 @@ const BikePage = ({ deleteBike }) => {
 
 };
 
-const bikeLoader = async ({ params }) => {
+const bikeLoader = async ({ params }: { params: any }) => {
   const res = await fetch(`/api/bikes/${params.id}`);
   const data = await res.json();
   return data;
