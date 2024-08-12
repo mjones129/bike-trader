@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import SingleBikeListing from './SingleBikeListing';
 import Spinner from './Spinner';
 
+
 const BikeListings = ({ isHome = false }) => {
-  const [bikes, setBikes] = useState([]);
+  const [bikes, setBikes] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -24,20 +25,20 @@ const BikeListings = ({ isHome = false }) => {
   }, []);
 
   return (
-      <div className="container-xl lg:container m-auto">
-        <h2 className="text-3xl font-bold text-lime-500 mb-6 text-center">
-          {isHome ? 'New Arrivals' : 'Browse Bikes'}
-        </h2>
+    <div className="container-xl lg:container m-auto">
+      <h2 className="text-3xl font-bold text-lime-500 mb-6 text-center">
+        {isHome ? 'New Arrivals' : 'Browse Bikes'}
+      </h2>
       {loading ? (
-      <Spinner loading={loading} />
+        <Spinner loading={loading} />
       ) : (
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {bikes.map((bike) => (
-          <SingleBikeListing key={bike.id} bike={bike} />
-        ))}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {bikes.map((bike) => (
+            <SingleBikeListing key={bike.id} bike={bike} />
+          ))}
         </div>
       )}
-      </div>
+    </div>
   );
 };
 

@@ -1,4 +1,3 @@
-import React from 'react'
 import DotLoader from 'react-spinners/DotLoader'
 
 const override = {
@@ -8,13 +7,13 @@ const override = {
 
 
 
-const Spinner = ({loading}) => {
+const Spinner = ({ loading }: { loading: any }) => {
   return (
-  <DotLoader
-    color="#3f6212"
-    loading={loading}
-    cssOverride={override}
-    size={150}
+    <DotLoader
+      color="#3f6212"
+      loading={loading}
+      cssOverride={override}
+      size={150}
     />
   );
 };
